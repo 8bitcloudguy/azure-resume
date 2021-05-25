@@ -31,7 +31,7 @@ namespace Company.Function
 
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
             {
-               Content = new String(jsonToReturn, Encoding.UTF8, "application/json")
+               Content = new StringContent(jsonToReturn, Encoding.UTF8, "application/json")
             };   
 
 
