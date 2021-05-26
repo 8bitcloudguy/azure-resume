@@ -29,7 +29,7 @@ namespace Company.Function
             updatedCounter.Count += 1;
 
             var jsonToReturn = JsonConvert.SerializeObject(counter);
-
+            //Massive pain in the ass
             return new HttpResponseMessage(System.Net.HttpStatusCode.OK)
             {
                Content = new StringContent(jsonToReturn, Encoding.UTF8, "application/json")
